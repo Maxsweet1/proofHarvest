@@ -4,14 +4,6 @@ The project grew from a real-world problem: reducing payment risk in cross-borde
 
 This repository contains two Solidity escrow implementations and an interactive frontend workflow prototype.
 
-## Live Demo
-Try the interactive ProofHarvest workflow prototype:
-
-**[Launch ProofHarvest Demo](https://maxsweet1.github.io/proofharvest-demo/)**
-
-The demo simulates the proposed agricultural escrow workflow, including buyer and seller roles, milestone requests, approvals, and percentage-based payment releases.
-
-> **Note:** The demo is a frontend workflow prototype. It does not currently submit transactions to the Solidity contracts in this repository.
 
 
 ## Project Structure
