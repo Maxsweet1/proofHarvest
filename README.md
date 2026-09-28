@@ -1,10 +1,10 @@
+# ProofHarvest
+
 ProofHarvest is an agricultural escrow project exploring how smart contracts can support milestone-based payments between buyers and agricultural suppliers.
 
 The project grew from a real-world problem: reducing payment risk in cross-border agricultural transactions while creating a transparent record of when agreed milestones have been completed.
 
-This repository contains two Solidity escrow implementations and an interactive frontend workflow prototype.
-
-
+This repository contains two Solidity escrow implementations representing different stages of the ProofHarvest escrow concept.
 
 ## Project Structure
 
@@ -13,8 +13,6 @@ proofHarvest/
 ├── src/
 │   ├── SimpleEscrow.sol
 │   └── GulupaEscrow.sol
-├── demo/
-│   └── index.html
 ├── LICENSE
 └── README.md
 ```
@@ -83,29 +81,6 @@ If an oracle check fails, the milestone payment transaction reverts.
 
 This provides an example of using external oracle data as a condition for smart-contract execution.
 
-## ProofHarvest Workflow Demo
-
-The `/demo` directory contains an interactive frontend prototype showing a broader agricultural escrow workflow.
-
-The demo explores concepts including:
-
-- Buyer and seller roles
-- Agricultural agreements
-- Milestone creation
-- Seller milestone requests
-- Buyer approval and rejection
-- Percentage-based payments
-- Progress tracking
-- USDC-denominated escrow balances
-
-### Important
-
-The frontend is currently a **workflow prototype**.
-
-It simulates the proposed buyer/seller interaction in the browser and does not currently connect to a wallet or submit transactions to the Solidity contracts.
-
-The Solidity contracts in `/src` are separate implementations of the underlying escrow concepts.
-
 ## Why I Built It
 
 ProofHarvest was inspired by the practical problems involved in purchasing and processing agricultural products across borders.
@@ -133,7 +108,6 @@ ProofHarvest explores how Solidity, stablecoins, and external verification mecha
 - ERC-20 / USDC
 - Chainlink price feeds
 - EVM-compatible networks
-- HTML / JavaScript frontend prototype
 
 ## Current Status
 
@@ -146,9 +120,8 @@ Currently implemented:
 - Percentage-based milestone payments
 - USDC payment logic
 - Chainlink oracle validation
-- Interactive agricultural escrow workflow prototype
 
-Future development may include additional Foundry testing, expanded verification mechanisms, stronger role separation, deployment tooling, and tighter integration between the frontend and smart contracts.
+Future development may include Foundry testing, expanded verification mechanisms, stronger role separation, deployment tooling, and frontend integration.
 
 ## Security
 
